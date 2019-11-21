@@ -1,0 +1,49 @@
+the dataset: open nii.gz by mricon
+
+histogram equalization
+ - two types: regular, contrast limited adaptive
+ - available in cv2 or scikit
+
+0-1/min-max normalization vs. mean normalization. 
+
+visualize the different MRI method images through historgram to see their data consistency. 
+
+survival ( days from identified to death)
+
+prediction of survival from the data
+
+team: make sure we use the same training and validation set, make sure the seed is the same
+
+train data - cross validation - k-fold -> determines the portion of validation( e.g. k = 5 then 1/5 is validation) 
+
+input: hgg/lgg, age, images. output: survival days. 
+
+linear regression 
+
+or starting from the binary classification. (divide the survival to two class. 
+
+momentum = 0.9 
+adaptive drop_out 0.5  
+
+— "Dropout: A Simple Way to Prevent Neural Networks from Overfitting, 2014."
+Dropout is not used in inference. 
+
+
+hypothesis: one MRI is too large when feed 240*240*155*5 per patient. usually images: 56*56*3 per image. 
+MRI is too sparse. use max from the image. area and location may be important too. but location is not taken for CNN. 
+
+we can have the CNN and output like 10 features then combine with ages, hgg/lgg binary, then ...
+
+we use the segmentation data together with the other MRIs.
+
+tools/models: linear regression, CNN, RNN, GAN, transfer learning, Adam, CrossEntropy, MSE.
+
+we are only doing it for the training data right now. not too consistent with the given test set. 
+
+-> how to integrate the spatial information 
+
+tip: visualize the weights. to debug. 
+
+https://psychscenehub.com/psychinsights/white-matter-hyperintensities-mri/
+
+segmentation voxel values: 0-4 4: tumor 3 2 1: ?
