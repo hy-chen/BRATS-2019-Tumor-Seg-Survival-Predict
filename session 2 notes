@@ -47,3 +47,5 @@ tip: visualize the weights. to debug.
 https://psychscenehub.com/psychinsights/white-matter-hyperintensities-mri/
 
 segmentation voxel values: 0-4 4: tumor 3 2 1: ?
+
+per MRI: 240 * 240 * 155(down/axial) 240 - sagittal and coronal
