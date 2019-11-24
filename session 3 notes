@@ -1,0 +1,28 @@
+https://cs2541-ml4h2019.github.io/lectures/CSC2541%20-%20Lecture%206.pdf
+
+Machine Learning for Medical Image Analysis
+
+- Medical images
+    varies dramatically by image type
+    different noise patterns, pat
+- segmentation
+- registration
+
+
+Tools: 
+ probabilities, convolutions, anatomical models, and clinical interpretation
+Challenge: 
+ "the system don't really work yet"
+ 
+ 
+ Medical Image Analysis
+(or: how can we help?)
+• Diagnosis algorithms - require large datasets
+• Visualization - learn what to show, widely overlooked?
+• Segmentation - outline, measure anatomy and pathology
+• Registration - alignment for treatment planning, population analysis
+• Acquisition - faster, better
+• Abnormality detection - pathology
+• Shape modelling
+• Joint inference with other clinical data 
+
