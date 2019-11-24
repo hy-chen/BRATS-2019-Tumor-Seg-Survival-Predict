@@ -12,6 +12,8 @@ Machine Learning for Medical Image Analysis
     Fully convolutional: (embedding) both input and output is high-dimensional
     U-net: The network is based on the fully convolutional network and its architecture was modified and extended to work with fewer training images and to yield more precise segmentations. Segmentation of a 512*512 image takes less than a second on a modern GPU. U-net deals with 2D images. Input: image. Output: 0 and 1 across the image to indicate the mask of "attention" area. (e.g. tumor) 
     V-net: deals with 3D images. not repeating U-net for each slide... instead it does 3D convolutions. have a different structure.
+    *use V-net* :)
+    
     
 - registration
 
