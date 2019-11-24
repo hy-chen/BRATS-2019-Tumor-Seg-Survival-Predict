@@ -4,7 +4,9 @@ Machine Learning for Medical Image Analysis
 
 - Medical images
     varies dramatically by image type
-    different noise patterns, pat
+    different noise patterns, patient motion, disease, many modalities
+    can be very big and obvious (tumor) or small and subtle (neurodegeneration)
+    a lot of 3+ dimensions so voxel instead of pixel. 
 - segmentation
 - registration
 
