@@ -8,14 +8,22 @@ Machine Learning for Medical Image Analysis
     can be very big and obvious (tumor) or small and subtle (neurodegeneration)
     a lot of 3+ dimensions so voxel instead of pixel. 
 - segmentation
-    VGG: images -> labels 
-    Fully convolutional: (embedding) both input and output is high-dimensional
-    U-net: The network is based on the fully convolutional network and its architecture was modified and extended to work with fewer training images and to yield more precise segmentations. Segmentation of a 512*512 image takes less than a second on a modern GPU. U-net deals with 2D images. Input: image. Output: 0 and 1 across the image to indicate the mask of "attention" area. (e.g. tumor) 
-    V-net: deals with 3D images. not repeating U-net for each slide... instead it does 3D convolutions. have a different structure.
-    *use V-net* :)
-    
-    
+    theoretically: 
+        VGG: images -> labels 
+        Fully convolutional: (embedding) both input and output is high-dimensional
+        U-net: The network is based on the fully convolutional network and its architecture was modified and extended to work with fewer training images and to yield more precise segmentations. Segmentation of a 512*512 image takes less than a second on a modern GPU. U-net deals with 2D images. Input: image. Output: 0 and 1 across the image to indicate the mask of "attention" area. (e.g. tumor) 
+        V-net: deals with 3D images. not repeating U-net for each slide... instead it does 3D convolutions. have a different structure.
+        *use V-net* :)
+        *result: ML compared to old classical image analysis tool
+            1sec-1hour of deep methods(e.g. U-net)
+            6-24 hours of FreeSurfer(classic state of the art)
+    practically computatble amount method:
+        probabilistic (generative) model ..... *need to understand this*
+            enable knowledge prior to segmentation model p(S)
+           
 - registration
+    compared similiar position scan and learn to ignore noisy difference between same scans. 
+    * didn't look into the algorithm details.
 
 
 Tools: 
